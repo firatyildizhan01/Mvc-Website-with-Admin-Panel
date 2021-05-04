@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLayer
+namespace DataAccessLayer.Abstract
 {
-    public class Class1
+    public interface IContentDal:IRepository<content>
     {
+
+
     }
 }
