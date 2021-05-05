@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,22 @@ namespace MvcProjeKamp.Controllers
         }
         public ActionResult GetCatgoryList()
         {
-            var categoryvalues = cm.GetAllBl();
+            var categoryvalues = cm.GetAllBL();
             return View(categoryvalues);
+        }
+        [HttpGet]
+        public ActionResult AddCategory()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AddCategory(Category p)
+        {
+            cm.CategoryAddBL(p);
+            return RedirectToAction("GetCatgoryList");
+            {
+
+            }
         }
     }
 }
