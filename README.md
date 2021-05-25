@@ -12,7 +12,8 @@ This website conclude categories,writers,graphics,galery,go to website etc .
 - Show your graphics
 - Export documents as 
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/32723458/119499389-59c47980-bd6f-11eb-8869-ecb55d189853.png)
+
 
 
 ## Tech
