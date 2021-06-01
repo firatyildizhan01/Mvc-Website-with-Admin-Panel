@@ -6,11 +6,12 @@
 
 <h1>Yeni kategori Ekleme Sayfası</h1>
 <br />
-@*@using (Html.BeginForm("AddCategory", "category", FormMethod.Post))
+@using (Html.BeginForm("AddCategory", "category", FormMethod.Post))
 {
 <div class="form-group">
      @Html.Label("Kategori Ad")
      @Html.TextBoxFor(x => x.CategoryName)
+     @Html.ValidationMessageFor(x=>x.CategoryName)
     <br />
     <br />
 
@@ -19,7 +20,7 @@
     <br />
     <br />
     <button>Kaydet</button>
-  </div>*@
+  </div>
 
 
 
